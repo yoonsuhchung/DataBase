@@ -1,4 +1,4 @@
-# DataBase
+# SQL Parser
 
 ## 구현한 내용에 대한 설명
 
