@@ -1,3 +1,3 @@
 # DataBase
 
-This is a repository for programming assignments from SNU 'data communication' class.
+This is a repository for programming assignments from SNU 'database' class.
