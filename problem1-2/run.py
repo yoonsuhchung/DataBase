@@ -234,8 +234,9 @@ class MyTransformer(Transformer):
         for col_name, col_content in insert_columns.items():
             insert_value = next(line_columns).children[0]
             # slicing the string to match the length constraint
+            # we assumed that the tuple is valid, so the string should always start and end with "'"
             if col_content['type'][0] == 'char':
-                insert_value = insert_value[:col_content['type'][1]]
+                insert_value = insert_value[1:-1][:col_content['type'][1]]
             insert_dict[col_name] = insert_value
 
         for col, val_list in insert_dict.items():
